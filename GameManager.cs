@@ -54,15 +54,15 @@ public class GameManager : MonoBehaviour {
     private void SetGameState(GameState newGameSate){
         if(newGameSate == GameState.menu){
             //TODO: colocar la lógica del menú
-        } else if(newGameSate == GameState.inGame){
+        } else if(newGameState == GameState.inGame){
             //TODO: hay que preparar la escena para jugar
             controller.StartGame();
-        }else if(newGameSate == GameState.gameOver){
+        }else if(newGameState == GameState.gameOver){
             //TODO: preparar el juego para el Game Over
         }
 
 
-        this.currentGameState = newGameSate;
+        this.currentGameState = newGameState;
     }
 
 
